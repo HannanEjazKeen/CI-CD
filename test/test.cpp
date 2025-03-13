@@ -1,5 +1,5 @@
 #include<gtest/gtest.h>
-#include "math_functions.h"
+#include "../math_functions.h"
 
 TEST(AdditionTest, PositiveNumbers)
 {
