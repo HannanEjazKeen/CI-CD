@@ -1,4 +1,5 @@
 #include <iostream>
+#include "math_functions.h"
 
 using namespace std;
 
@@ -8,7 +9,7 @@ int main()
   
   cin >> i >> j;
   
-  cout <<i+j;
+  cout <<add(i,j);
   
   return 0;
 }
