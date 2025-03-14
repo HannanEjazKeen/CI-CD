@@ -1,5 +1,4 @@
 #include <iostream>
-#include "math_functions.h"
 
 using namespace std;
 
