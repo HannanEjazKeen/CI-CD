@@ -88,6 +88,32 @@ TEST(SwapTest, NegativeNumbers)
   EXPECT_EQ(y,-3);
 }
 
+class SwapTestC : public ::testing::TestWithParam<std::tuple<int,int>> {};
+
+TEST_P(SwapTestC, SwapNumbers)
+{
+  int x = std::get<0>(GetParam());
+  int y = std::get<1>(GetParam());
+  
+  int swapedx = y;
+  int swapedy = x;
+  
+  swap(x,y);
+  
+  EXPECT_EQ(x,swapedx);
+  EXPECT_EQ(y,swapedy);
+}
+
+INITIATE_TEST_SUITE_P(
+  SwapTests,
+  SwapTestC,
+  ::testing::Values(
+    std::make_tuple(2,3),
+    std::make_tuple(5,-6),
+    std::make_tuple(-8,7),
+    std::make_tuple(5,0),
+  )
+);
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);
