@@ -104,7 +104,7 @@ TEST_P(SwapTestC, SwapNumbers)
   EXPECT_EQ(y,swapedy);
 }
 
-INITIATE_TEST_SUITE_P(
+INSTANTIATE_TEST_SUITE_P(
   SwapTests,
   SwapTestC,
   ::testing::Values(
@@ -114,6 +114,7 @@ INITIATE_TEST_SUITE_P(
     std::make_tuple(5,0),
   )
 );
+
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);
