@@ -111,7 +111,7 @@ INSTANTIATE_TEST_SUITE_P(
     std::make_tuple(2,3),
     std::make_tuple(5,-6),
     std::make_tuple(-8,7),
-    std::make_tuple(5,0),
+    std::make_tuple(5,0)
   )
 );
 
