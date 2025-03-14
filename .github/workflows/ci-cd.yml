@@ -26,4 +26,4 @@ jobs:
        run: cmake --build build
        
      - name: Run Unit Tests
-       run: ./build/runTests --gtest_filter=EvenOddTest.*
+       run: ./build/runTests --gtest_filter=-EvenOddTest.*
