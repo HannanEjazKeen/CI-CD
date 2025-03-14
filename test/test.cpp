@@ -72,6 +72,22 @@ TEST(DivisionTest, ZeroNumbers)
   EXPECT_EQ(divide(0,3),0);
 }
 
+TEST(SwapTest, PostiveNumbers)
+{
+  int x=3, y=2;
+  swap(x,y);
+  EXPECT_EQ(x,2);
+  EXPECT_EQ(y,3);
+}
+
+TEST(SwapTest, NegativeNumbers)
+{
+  int x=-3, y=-2;
+  swap(x,y);
+  EXPECT_EQ(x,-2);
+  EXPECT_EQ(y,-3);
+}
+
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);

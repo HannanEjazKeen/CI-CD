@@ -8,4 +8,5 @@ int subtract(int, int);
 int multiply(int, int);
 float divide(int, int);
 
+void swap(int&, int&);
 #endif

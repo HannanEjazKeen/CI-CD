@@ -25,3 +25,9 @@ float divide(int a, int b)
   return float(a)/float(b);
 }
 
+void swap(int &a, int &b)
+{
+  b = b-a; // 3-2 = 1
+  a = a+b; // 2+1 = 3
+  b = a-b; // 3-1 = 2
+}
