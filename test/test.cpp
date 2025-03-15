@@ -138,6 +138,25 @@ INSTANTIATE_TEST_SUITE_P(
   )
 );
 
+class FabonacciNumber : public ::testing::TestWithParam<std:tuple<int,int>> {};
+
+TEST_P(FabonacciNumber, FabonacciNumbers)
+{
+  int n = std::get<0>(GetParam());
+  
+  int result = std::get<1>(GetParam());
+  
+  EXPECT_EQ(fabonacciSeries(n), result);
+}
+
+INSTENTIATE_TEST_SUITE_P(
+ FabonacciNumber_,
+ FabonacciNumber,
+ std::make_tuple(3, 1),
+ std::make_tuple(10, 34),
+ std::make_tuple(7, 8)
+);
+
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);

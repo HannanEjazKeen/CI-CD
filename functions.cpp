@@ -40,3 +40,16 @@ int largestNumber(int a, int b, int c)
     return b;
   return c;
 }
+
+int fabonacciSeries(int n)
+{
+  int a = 0, b = 1, c;
+  for (int i=0; i<n-2; i++)
+  {
+    c = a+b;
+    a = b;
+    b = c;
+  }
+  
+  return c;
+}

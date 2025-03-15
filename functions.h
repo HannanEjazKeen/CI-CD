@@ -12,4 +12,6 @@ void swap(int&, int&);
 
 int largestNumber(int, int, int);
 
+int fabonacciSeries(int);
+
 #endif
