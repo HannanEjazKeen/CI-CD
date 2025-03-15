@@ -150,11 +150,13 @@ TEST_P(FabonacciNumber, FabonacciNumbers)
 }
 
 INSTANTIATE_TEST_SUITE_P(
- FabonacciNumber_,
- FabonacciNumber,
- std::make_tuple(3, 1),
- std::make_tuple(10, 34),
- std::make_tuple(7, 8)
+  FabonacciNumber_,
+  FabonacciNumber,
+  ::testing::Values(
+    std::make_tuple(3, 1),
+    std::make_tuple(10, 34),
+    std::make_tuple(7, 8)
+  )
 );
 
 int main(int argc, char **argv)
