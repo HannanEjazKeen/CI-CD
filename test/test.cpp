@@ -115,7 +115,7 @@ INSTANTIATE_TEST_SUITE_P(
   )
 );
 
-class LargestNumber : public ::testing::TestWithParam<std::tuple<int,int,int>> {};
+class LargestNumber : public ::testing::TestWithParam<std::tuple<int,int,int,int>> {};
 
 TEST_P(LargestNumber, LargestNumbers)
 {
