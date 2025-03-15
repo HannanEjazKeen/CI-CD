@@ -138,7 +138,7 @@ INSTANTIATE_TEST_SUITE_P(
   )
 );
 
-class FabonacciNumber : public ::testing::TestWithParam<std:tuple<int,int>> {};
+class FabonacciNumber : public ::testing::TestWithParam<std::tuple<int,int>> {};
 
 TEST_P(FabonacciNumber, FabonacciNumbers)
 {
