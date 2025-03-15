@@ -38,6 +38,5 @@ int largestNumber(int a, int b, int c)
     return a;
   if (b>a && a>c)
     return b;
-  if (c>a && a>b)
-    return c;
+  return c;
 }
