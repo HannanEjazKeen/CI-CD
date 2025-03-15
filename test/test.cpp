@@ -149,7 +149,7 @@ TEST_P(FabonacciNumber, FabonacciNumbers)
   EXPECT_EQ(fabonacciSeries(n), result);
 }
 
-INSTENTIATE_TEST_SUITE_P(
+INSTANTIATE_TEST_SUITE_P(
  FabonacciNumber_,
  FabonacciNumber,
  std::make_tuple(3, 1),
