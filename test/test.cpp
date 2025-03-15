@@ -131,10 +131,10 @@ INSTANTIATE_TEST_SUITE_P(
   LargestNumber_,
   LargestNumber,
   ::testing::Values(
-    std::make_tuple(1,2,3,3);
-    std::make_tuple(15,23,13,23);
-    std::make_tuple(11,22,53,53);
-    std::make_tuple(15,12,13,15);
+    std::make_tuple(1,2,3,3),
+    std::make_tuple(15,23,13,23),
+    std::make_tuple(11,22,53,53),
+    std::make_tuple(15,12,13,15)
   )
 );
 
