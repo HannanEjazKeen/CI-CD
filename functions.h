@@ -9,4 +9,7 @@ int multiply(int, int);
 float divide(int, int);
 
 void swap(int&, int&);
+
+int largestNumber(int, int, int);
+
 #endif

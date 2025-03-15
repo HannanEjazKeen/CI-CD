@@ -31,3 +31,13 @@ void swap(int &a, int &b)
   a = a+b; // 2+1 = 3
   b = a-b; // 3-1 = 2
 }
+
+int largestNumber(int a, int b, int c)
+{
+  if (a>b && b>c)
+    return a;
+  if (b>a && a>c)
+    return b;
+  if (c>a && a>b)
+    return c;
+}

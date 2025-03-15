@@ -115,6 +115,29 @@ INSTANTIATE_TEST_SUITE_P(
   )
 );
 
+class LargestNumber : public ::testing::TestWithParam<std::tuple<int,int,int>> {};
+
+TEST_P(LargestNumber, LargestNumbers)
+{
+  int a = std::get<0>(GetParam());
+  int b = std::get<1>(GetParam());
+  int c = std::get<2>(GetParam());
+  
+  int expectedResult = std::get<3>(GetParam());
+  EXPECT_EQ(largestNumber(a,b,c),expectedResult);
+}
+
+INSTANTIATE_TEST_SUITE_P(
+  LargestNumber_,
+  LargestNumber,
+  ::testing::Values(
+    std::make_tuple(1,2,3,3);
+    std::make_tuple(15,23,13,23);
+    std::make_tuple(11,22,53,53);
+    std::make_tuple(15,12,13,15);
+  )
+);
+
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);
