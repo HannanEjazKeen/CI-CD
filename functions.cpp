@@ -34,9 +34,9 @@ void swap(int &a, int &b)
 
 int largestNumber(int a, int b, int c)
 {
-  if (a>b && b>c)
+  if (a>b && a>c)
     return a;
-  if (b>a && a>c)
+  if (b>a && b>c)
     return b;
   return c;
 }
